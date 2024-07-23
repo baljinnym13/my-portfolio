@@ -6,10 +6,10 @@ import Heroimages from "./hero-images";
 
 const HeroSection = () => {
   return (
-    <div className="h-screen bg-red-300">
+    <div className="h-[370px] px-20 py-4 flex justify-between m-auto items-center mb-24">
       <div>
-        <h1>Hi, I’m Tom 👋</h1>
-        <p>
+        <h1 className="font-bold text-[60px] mb-2">Hi, I’m Baljaa 👋</h1>
+        <p className="font-normal text-[16px] text-gray-600 mb-12">
           I specialize in full stack development, particularly with React.js and
           Node.js. <br /> My main goal is to create exceptional digital
           experiences that are fast, visually <br /> appealing, and accessible
@@ -21,19 +21,23 @@ const HeroSection = () => {
           <div>
             <IoLocationOutline />
           </div>
-          <span>Ulaanbaatar, Mongolia</span>
+          <span className="font-normal text-[16px] text-gray-600">
+            Ulaanbaatar, Mongolia
+          </span>
         </div>
         <div className="flex items-center gap-2">
           <div className="bg-green-500 h-2 w-2 rounded-full"></div>
-          <span>Available for new projects</span>
+          <span className="font-normal text-[16px] text-gray-600">
+            Available for new projects
+          </span>
         </div>
-        <div className="flex items-center gap-1">
-          <FiGithub />
-          <FiTwitter />
-          <SiFigma />
+        <div className="flex items-center gap-4 mt-12">
+          <FiGithub className="w-9 h-9 p-[6px]" />
+          <FiTwitter className="w-9 h-9 p-[6px]" />
+          <SiFigma className="w-9 h-9 p-[6px]" />
         </div>
       </div>
-      <Heroimages imgUrl={""} />
+      <Heroimages imgUrl={"./images/profile.jpg"} />
     </div>
   );
 };
