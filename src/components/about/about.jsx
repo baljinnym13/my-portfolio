@@ -3,7 +3,7 @@ import { FaCircle } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="bg-gray-50 mb-24 mt-24 flex-col items-center justify-center">
+    <div className="bg-gray-50  flex-col items-center justify-center">
       <div id="about" className="text-center mt-24">
         <Tag TagText={"abaut me"} />
         <div className="flex justify-between px-32 mt-12 mb-24">
