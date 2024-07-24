@@ -37,7 +37,7 @@ const HeroSection = () => {
           <SiFigma className="w-9 h-9 p-[6px]" />
         </div>
       </div>
-      <Heroimages imgUrl={"./images/profile.jpg"} />
+      <Heroimages imgUrl={"./images/profile.jpg"} size="w-[280px] h-80" />
     </div>
   );
 };

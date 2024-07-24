@@ -1,8 +1,8 @@
-const Heroimages = ({ imgUrl }) => {
+const Heroimages = ({ imgUrl, size }) => {
   return (
     <div>
       <img
-        className="w-[280px] h-80 shadow-[40px_40px_#E5E7EB] border-8 border-white "
+        className={`${size} shadow-[40px_40px_#E5E7EB] border-8 border-white `}
         src={imgUrl}
         alt="img"
       />
