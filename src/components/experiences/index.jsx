@@ -1,22 +1,58 @@
-const ExperienceCard = ({ title, companyLogo, jobRoles }) => {
+import Tag from "../tag";
+import ExperienceCard from "./experienceText";
+const ExperiencesContent = [
+  {
+    logo: "./images/Group.png",
+    position: "Sr.Frontend Developer",
+    date: "2014.08-Present",
+    jobRoles: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "The job description should accurately reflect the duties and responsibilities of the position.",
+      "When well-written, it produces a realistic picture of a job and answers the question",
+      "“What does the person in this role actually do?”",
+    ],
+  },
+  {
+    logo: "./images/Group.png",
+    position: "Team Lead",
+    date: "2014.08-Present",
+    jobRoles: [
+      "A job description not only describes the position’s responsibilities,",
+      "it sets the foundation for recruiting",
+      "developing, and retaining talent and",
+      "also sets the stage for optimum work performance by clarifying responsibilities,",
+    ],
+  },
+  {
+    logo: "./images/Group.png",
+    position: "Full Stack Developer",
+    date: "2014.08-Present",
+    jobRoles: ["expected results, ", "and evaluation of performance"],
+  },
+];
+
+const Experience = () => {
   return (
-    <div className="m-auto flex justify-between h-40 w-[896px] drop-shadow-2xl rounded-lg mb-3">
-      <div className="flex-1 bg-red-400">
-        <img src={companyLogo} alt="logo" />
-      </div>
-      <div className="flex-1 bg-blue-400">
-        <h1 className="text-2xl font-bold">{title}</h1>
-        <ul>
-          {jobRoles.map((role) => (
-            <li>{role}</li>
+    <section className="py-20 px-24 bg-gray-50 text-center ">
+      <div className="px-8">
+        <Tag TagText="Experience" />
+        <div className="flex justify-center mt-4 mb-12 text-gray-600 text-xl font-normal">
+          <span className="text-gray-600 text-xl">
+            Here is a quick summary of my most recent experiences:
+          </span>
+        </div>
+        <div className="text-start">
+          {ExperiencesContent.map(({ logo, position, date, jobRoles }) => (
+            <ExperienceCard
+              companyLogo={logo}
+              position={position}
+              date={date}
+              jobRoles={jobRoles}
+            />
           ))}
-        </ul>
+        </div>
       </div>
-      <div className="flex-1 bg-slate-400">
-        <p>{new Date().toLocaleDateString()}</p>
-      </div>
-    </div>
+    </section>
   );
 };
-
-export default ExperienceCard;
+export default Experience;
