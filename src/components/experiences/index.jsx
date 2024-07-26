@@ -33,11 +33,14 @@ const ExperiencesContent = [
 
 const Experience = () => {
   return (
-    <section className="py-20 px-24 bg-gray-50 text-center ">
+    <section
+      id="experience"
+      className="py-20 px-24 bg-gray-50 text-center dark:bg-black"
+    >
       <div className="px-8">
         <Tag TagText="Experience" />
         <div className="flex justify-center mt-4 mb-12 text-gray-600 text-xl font-normal">
-          <span className="text-gray-600 text-xl">
+          <span className="text-gray-600 text-xl dark:text-white">
             Here is a quick summary of my most recent experiences:
           </span>
         </div>

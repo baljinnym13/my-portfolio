@@ -3,17 +3,17 @@ import { FaCircle } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="bg-gray-50  flex-col items-center justify-center">
+    <div className="bg-gray-50  flex-col items-center justify-center dark:bg-black">
       <div id="about" className="text-center mt-24">
         <Tag TagText={"abaut me"} />
         <div className="flex justify-between px-32 mt-12 mb-24">
           <img
-            className="shadow-[-40px_40px_#E5E7EB] w-[500px] h-[580px] border-8 border-gray-50"
+            className="shadow-[-40px_40px_#E5E7EB] w-[500px] h-[580px] border-8 border-gray-50 dark:border-black"
             src="./images/adoutimg.jpg"
             alt="jpg"
           />
-          <div className="font-normal text-gray-600 text-base flex flex-col gap-4 text-start mb-24">
-            <h1 className="font-semibold text-gray-900 text-[36px] mb-5">
+          <div className="font-normal text-gray-600 text-base flex flex-col gap-4 text-start mb-24 dark:text-white">
+            <h1 className="font-semibold text-gray-900 text-[36px] mb-5 dark:text-white">
               Curious ab1out me? Here you have it:
             </h1>
             <p>

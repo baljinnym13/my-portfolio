@@ -1,17 +1,17 @@
-import Tags from "../tag";
+import Tag from "../tag";
 import WorkCard from "./workCard";
 const proList = [
   {
-    proImg: "/images/Picture.png",
+    proImg: "/images/adoutimg.jpg",
     proTitle: "UB cab",
     proText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
     useApp: [
       "React",
       "Next.js",
       "Typescript",
       "Nest.js",
-      "PostgreSQL",
+      "PostgreSql",
       "Tailwindcss",
       "Figma",
       "Cypress",
@@ -20,7 +20,7 @@ const proList = [
     ],
   },
   {
-    proImg: "/images/mentor.png",
+    proImg: "/images/adoutimg.jpg",
     proTitle: "Mentorhub",
     proText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -29,7 +29,7 @@ const proList = [
       "Next.js",
       "Typescript",
       "Nest.js",
-      "PostgreSQL",
+      "PostgreSql",
       "Tailwindcss",
       "Figma",
       "Cypress",
@@ -38,8 +38,8 @@ const proList = [
     ],
   },
   {
-    proImg: "/images/Itoim.png",
-    proTitle: "iToim",
+    proImg: "/images/adoutimg.jpg",
+    proTitle: "Itoim",
     proText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
     useApp: [
@@ -47,7 +47,7 @@ const proList = [
       "Next.js",
       "Typescript",
       "Nest.js",
-      "PostgreSQL",
+      "PostgreSql",
       "Tailwindcss",
       "Figma",
       "Cypress",
@@ -58,24 +58,27 @@ const proList = [
 ];
 const Work = () => {
   return (
-    <section>
+    <section id="work" className="px-20 py-24 text-center">
       <div>
-        <Tags TagText="Work" />
+        <Tag TagText="Work" />
         <div className="flex justify-center">
-          <span className="text-xl text-gray-600">
+          <span className="text-xl text-gray-600 mt-4 mb-12 dark:text-white">
             Some of the noteworthy projects I have built:
           </span>
         </div>
       </div>
       <div>
-        {proList.map(({ proImg, proTitle, proText, useApp }) => (
+        {proList.map(({ proImg, proTitle, proText, useApp }, idx) => (
           <WorkCard
+            key={idx}
+            index={idx}
             proImg={proImg}
             proTitle={proTitle}
             proText={proText}
-            useApp={useApp.map((app, idx) => (
-              <Tags key={idx} TagText={app} />
-            ))}
+            useApp={useApp.map((app, idx) => {
+              console.log("app", app);
+              return <Tag key={idx} TagText={app} />;
+            })}
           />
         ))}
       </div>

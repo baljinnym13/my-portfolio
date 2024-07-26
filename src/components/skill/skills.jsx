@@ -1,7 +1,7 @@
 import Tag from "../tag";
 const Skills = () => {
   return (
-    <div id="work" className="px-20 py-4 text-center">
+    <div id="skill" className="px-20 py-4 text-center">
       <div className="mb-12">
         <Tag TagText={"Skills"} />
         <h1 className="mt-4">

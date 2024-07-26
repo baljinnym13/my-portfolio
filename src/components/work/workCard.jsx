@@ -1,17 +1,26 @@
 import { FiExternalLink } from "react-icons/fi";
 
-const WorkCard = ({ proImg, proTitle, proText, useApp }) => {
+const WorkCard = ({ proImg, proTitle, proText, useApp, index }) => {
+  console.log(index);
   return (
-    <section className="flex rounded-xl">
-      <div className="flex-1 bg-gray-50 p-12">
-        <img src={proImg} alt="img" />
+    <section
+      className={`${
+        index % 2 == 0 ? "flex" : "flex-row-reverse flex"
+      } shadow-xl py-8 px-8 rounded-x text-start`}
+    >
+      <div className="flex-1 bg-gray-50 dark:bg-[#374151] p-12 flex justify-center items-center">
+        <img src={proImg} alt="png" />
       </div>
-      <div className="flex-1 bg-white p-12 ">
-        <h1 className="text-xl font-bold text-gray-900">{proTitle} </h1>
-        <p className="text-base text-gray-600 font-normal">{proText}</p>
-        <div className="flex flex-wrap ">{useApp}</div>
+      <div className="flex-1 bg-white dark:bg-[#1F2937] p-14 flex flex-col justify-between">
+        <h1 className="text-xl font-bold dark:text-[#F9FAFB] text-gray-900 dark:text-white">
+          {proTitle}{" "}
+        </h1>
+        <p className="text-base dark:text-[#D1D5DB] text-gray-600 font-normal dark:text-white">
+          {proText}
+        </p>
+        <div className="flex flex-wrap gap-2">{useApp}</div>
         <button>
-          <a href="">
+          <a href="" className="dark:text-white">
             <FiExternalLink />
           </a>
         </button>
