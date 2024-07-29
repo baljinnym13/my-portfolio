@@ -1,7 +1,14 @@
 import Tag from "../tag";
 import { FaCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const About = () => {
+  <motion.div
+    whileHover={{ scale: 1.2 }}
+    whileTap={{ scale: 1.1 }}
+    drag="x"
+    dragConstraints={{ left: -100, right: 100 }}
+  />;
   return (
     <div className="bg-gray-50  flex-col items-center justify-center dark:bg-black">
       <div id="about" className="text-center mt-24">

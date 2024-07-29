@@ -7,7 +7,7 @@ const Header = () => {
       <h1 className="text-3xl font-black">BALJAA</h1>
 
       <NavSection />
-      {/* <Phono_menu /> */}
+      {<Phono_menu />}
     </header>
   );
 };

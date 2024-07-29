@@ -2,7 +2,7 @@ import Tag from "../tag";
 import WorkCard from "./workCard";
 const proList = [
   {
-    proImg: "/images/adoutimg.jpg",
+    proImg: "/images/Picture2.png",
     proTitle: "UB cab",
     proText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -20,7 +20,7 @@ const proList = [
     ],
   },
   {
-    proImg: "/images/adoutimg.jpg",
+    proImg: "/images/Picture1.png",
     proTitle: "Mentorhub",
     proText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -38,7 +38,7 @@ const proList = [
     ],
   },
   {
-    proImg: "/images/adoutimg.jpg",
+    proImg: "/images/Picture.png",
     proTitle: "Itoim",
     proText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",

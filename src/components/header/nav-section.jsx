@@ -1,6 +1,5 @@
 import Menu from "./menu";
 import NavButtons from "./nav-buttons";
-import { TiThMenuOutline } from "react-icons/ti";
 const menuList = [
   { menuId: "Id01", label: "Home", link: "/" },
   { menuId: "Id02", label: "About", link: "#about" },
@@ -15,7 +14,6 @@ const NavSection = () => {
         <Menu menuList={menuList} />
         <NavButtons />
       </div>
-      <TiThMenuOutline className="max-sm:block" />
     </div>
   );
 };

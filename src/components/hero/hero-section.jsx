@@ -3,10 +3,10 @@ import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { SiFigma } from "react-icons/si";
 import Heroimages from "./hero-images";
-
+// h-[370px] px-20 py-4 flex justify-between m-auto items-center mb-24
 const HeroSection = () => {
   return (
-    <div className="h-[370px] px-20 py-4 flex justify-between m-auto items-center mb-24">
+    <div className="flex flex-col-reverse gap-12 m-auto items-center py-4 px-20">
       <div>
         <h1 className="font-bold text-[60px] mb-2">Hi, I’m Baljaa 👋</h1>
         <p className="font-normal text-[16px] text-gray-600 mb-12">
