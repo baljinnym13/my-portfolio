@@ -58,11 +58,11 @@ const proList = [
 ];
 const Work = () => {
   return (
-    <section id="work" className="px-20 py-24 text-center">
+    <section id="work" className="px-4 py-16 text-center">
       <div>
         <Tag TagText="Work" />
         <div className="flex justify-center">
-          <span className="text-xl text-gray-600 mt-4 mb-12 dark:text-white">
+          <span className="text-xl text-gray-600 font-normal mt-4 mb-12 dark:text-white">
             Some of the noteworthy projects I have built:
           </span>
         </div>
@@ -76,7 +76,6 @@ const Work = () => {
             proTitle={proTitle}
             proText={proText}
             useApp={useApp.map((app, idx) => {
-              console.log("app", app);
               return <Tag key={idx} TagText={app} />;
             })}
           />
